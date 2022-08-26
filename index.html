@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <div role="main">
+    <header>
+      <div class="nav">
+        <div class="logo">
+            <svg class="icon-menu" viewbox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd" />
+            </svg>
+          <img src="images/logo.svg" alt="logo">
+        </div>
+          <ul class="main-nav-list">
+            <svg class="cross-icon" viewbox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                fill="#69707D" fill-rule="evenodd" />
+            </svg>
+            <li class="item">Collections</li>
+            <li class="item">Men</li>
+            <li class="item">Women</li>
+            <li class="item">About</li>
+            <li class="item">Contact</li>
+          </ul>
+        <div class="nav-item">
+          <div class="cart">
+            <div class="add-cart">
+              <span class="product-number" id="product-number">0</span>
+              <img id="Cart-icon" src="images/icon-cart.svg" alt="Cart-icon">
+            </div>
+            <div class="cart-preview" id="cart-preview">
+              <div class="cart-top">
+                <h6>cart</h6>
+              </div>
+              <div class="cart-details">
+                <p id="alart">Your cart is empty</p>
+                <img id="cart-info-image" src="images/image-product-1-thumbnail.jpg" alt="product image">
+                <div>
+                  <p id="cart-p">Fall Limited Edition Sneakers</p>
+                  <div class="cart-info" id="cart-info-price"><p>$125 x<span id="price"></span></p><img src="images/icon-delete.svg" alt="icon-delete" id="delete-icon"></div>
+                </div>
+              </div>
+              <div class="cart-btn">
+                <div class="btn">Checkout</div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-image">
+            <img class="avatar" src="images/image-avatar.png" alt="image-avatar">
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <div class="main-page">
+        <div class="image-part">
+          <div class="display-image" >
+            <img id="main-image" src="images/image-product-1.jpg" alt="product-image">
+          </div>
+          <div class="thumbnail">
+            <img id="thumb-1" class="thumbs" src="images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail">
+            <img id="thumb-2" class="thumbs"src="images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail">
+            <img id="thumb-3" class="thumbs"src="images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail">
+            <img id="thumb-4" class="thumbs"src="images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail">
+          </div>
+        </div>
+        <div class="info-part">
+          <H5>Sneaker Company</H5>
+          <H1>Fall Limited Edition Sneakers</H1>
+          <P>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </P>
+          <div class="price"><H3>$125.00</H3> <h6>50%</h6></div>
+          
+          <p>$250.00</p>
+          <div class="btns">
+            <div class="quantity">
+              <div class="minus" id="minus-el"><img src="images/icon-minus.svg" alt=""></div>
+              <div class="number" id="number-el">0</div>
+              <div class="plus" id="plus-el"><img src="images/icon-plus.svg" alt=""></div>
+            </div>
+            <div class="btn" id="btn-cart">
+              <div class="big-btn"><img src="images/icon-cart.svg" alt=""> Add to cart</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="overlay-container" id="overlay-container">
+      <div class="container-oly">
+        <div class="main-image-oly" >
+          <img id="image-oly" src="images/image-product-1.jpg" alt="product-image">
+        </div>
+        <div class="thumbnail-oly">
+          <img id="thumb-oly-1" class="thumbs-oly" src="images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail">
+          <img id="thumb-oly-2" class="thumbs-oly"src="images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail">
+          <img id="thumb-oly-3" class="thumbs-oly"src="images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail">
+          <img id="thumb-oly-4" class="thumbs-oly"src="images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail">
+        </div>
+        <div class="btn-oly">
+          <div class="previus-btn" id="previus-btn"><i class="fa-solid fa-circle-arrow-left"></i></div>
+          <div class="next-btn" id="next-btn"><i class="fa-solid fa-circle-arrow-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg"></div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="script.js"></script>
+</body>
+</html>
